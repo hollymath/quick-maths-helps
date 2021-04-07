@@ -2,8 +2,8 @@ R function to find the greatest common factor of two integers using the Euclidea
 
 def euclidean_algorithm (a, b):
   #these two lines ensure that the larger inputted number is assigned to a and the smaller to b
-  a = max(a, b)
-  b = min(a, b)
+  if b > a:
+    a, b = b, a
   #using a while loop lets us make sure it continues all the way through
   while a % b != 0:
     r = a % b
