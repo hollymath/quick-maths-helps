@@ -1,4 +1,4 @@
-R function to find the greatest common factor of two integers using the Euclidean algorithm:
+Python function to find the greatest common factor of two integers using the Euclidean algorithm:
 
 def euclidean_algorithm (a, b):
   #these two lines ensure that the larger inputted number is assigned to a and the smaller to b
