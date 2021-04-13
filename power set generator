@@ -1,0 +1,30 @@
+#Python
+
+#this function will return the power set
+
+
+#put the elements of the set from which you want to see the power set in the
+#brackets of the full_set list designated below
+
+full_set = []
+
+
+def subset_factory (n):
+  subsets = [] 
+
+  #It is a known mathematical fact that the length of a power set is 2 raised to 
+  #the power of the number of elements in the set we are working with
+
+  for x in range (2**len(n)):
+    subset = []
+    for y in range (len(n)):
+      if x & (1 << y) > 0:
+       subset.append(n[y])
+    subsets.append(subset)
+  return subsets
+
+power_set = (subset_factory(full_set))  
+print(power_set)
+
+
+#R version coming soon!
